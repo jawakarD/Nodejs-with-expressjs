@@ -2,6 +2,7 @@ const express = require('express');
 const dataFile = require('./data/data.json');
 var app = express();
 const reload = require('reload');
+const io = require('socket.io')();
 
 app.set('port',process.env.PORT || 3000);
 app.set('appData',dataFile);
@@ -20,6 +21,32 @@ app.use(express.static('app/public'));
 var server = app.listen(app.get('port'),()=>{
     console.log("http listening on port' "+app.get('port'));
  });
+
+
+
+io.attach(server);
+
+io.attach(server);
+io.on('connection', function(socket) {
+  socket.on('postMessage', function(data) {
+    io.emit('updateMessages', data);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

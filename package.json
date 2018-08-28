@@ -17,7 +17,8 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "nodemon": "^1.18.3",
-    "reload": "^2.3.1"
+    "reload": "^2.3.1",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
     "eslint": "^5.4.0",
