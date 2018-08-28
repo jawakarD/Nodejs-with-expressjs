@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-with-expressjs",
+  "version": "1.0.0",
+  "description": "Building web application with node-js and express",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app --ignore feedback.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "JawakarD"
+  },
+  "author": "JawakarD",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3",
+    "reload": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
